@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/measureLatitudeLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/colorWrite"
+        android:text="@string/measure_latitude_longitude" />
+
+    <!--    文字の表示・非表示はアクティビティで行う-->
+
+    <!--    経度を表示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:id="@+id/textLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWrite"
+            android:text="@string/longitude" />
+
+        <TextView
+            android:id="@+id/textFieldLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWrite"
+            android:text="@string/longitude_field" />
+
+    </LinearLayout>
+
+    <!--    緯度を表示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/textLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWrite"
+            android:text="@string/latitude" />
+
+        <!--   実際の緯度表示 -->
+        <TextView
+            android:id="@+id/textFieldLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWrite"
+            android:text="@string/latitude_field" />
+    </LinearLayout>
+
+    <!--    アドレスを表示-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:id="@+id/textAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWrite"
+            android:text="@string/address" />
+
+        <!--   実際のアドレス表示 -->
+        <TextView
+            android:id="@+id/textFieldAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWrite"
+            android:text="@string/address_field" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/startMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/measure_start"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/finishMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/measure_finish"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        />
+
+
+    <Button
+        android:id="@+id/showMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/measure_show"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        />
+
+    <Button
+        android:id="@+id/exportMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/measure_export"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        />
+
+
+</LinearLayout>

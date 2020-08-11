@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Get Latitude and Longitude</string>
+    <string name="measure_latitude_longitude">緯度と経度を測定します</string>
+    <string name="measure_latitude_longitude_proceed">測定中</string>
+    <string name="measure_start">測定開始</string>
+    <string name="measure_finish">測定終了</string>
+    <string name="measure_export">緯度・経度を出力</string>
+    <string name="measure_show">緯度・経度を一覧表示</string>
+    <string name="latitude">緯度：</string>
+    <string name="longitude">経度：</string>
+    <string name="address">住所：</string>
+    <string name="latitude_field">緯度が入ります</string>
+    <string name="longitude_field">経度が入ります</string>
+    <string name="address_field">住所が入ります</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="return_to_main">戻る</string>
+    <string name="service_not_available">住所が使用できません</string>
+    <string name="address_not_found">住所が使用できません</string>
+</resources>
